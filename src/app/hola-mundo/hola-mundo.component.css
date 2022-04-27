@@ -1,0 +1,36 @@
+.hello-world{
+    color:none;
+    position: static;
+    text-align: center;
+    margin: 20px;
+}
+.newUser{
+    margin: 20px;
+    padding: 20px;
+}
+.btn-primary{
+    padding: 5px;
+    margin: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.card {
+    width: 18rem;
+    margin: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    float: left;
+}
+
+input {
+    margin: 10px;
+    
+}
+
+.imagen {
+    width: 200px;
+}
+

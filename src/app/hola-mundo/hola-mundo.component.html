@@ -1,0 +1,54 @@
+<div class="hello-world">
+
+    <h1>{{title}}</h1>
+    <h2>Subtitulo de prueba</h2>
+</div>
+
+<!-- ingresar datos -->
+
+<form class="newUser" (submit)="addUser(newUser) || addDescription(newDescription)">
+
+    <!-- <form class="newDescription" (submit)="addDescription(newDescription)"> -->
+
+    <input type="text" placeholder="Agregar usuario" #newUser>
+    <input type="text" placeholder="Ingresar descripcion" #newDescription>
+    <button class="btn btn-primary">
+        Agregar
+    </button>
+</form>
+<!-- </form> -->
+<br>
+<br>
+
+<!-- Tarjetas -->
+
+<div class="card" *ngFor="let user of users ">
+
+    <div class="card-body">
+        <h5 class="card-title"> Nombre : {{user}}</h5>
+        <h6 class="card-text">Descripcion:</h6>
+        <a href="#" class="card-link">Github</a>
+        <a href="#" class="card-link">Twitter</a>
+        <button class="btn btn-primary" (click)="deleteUser(user) ">Borrar</button>
+    </div>
+
+</div>
+
+<hr> 
+<img src="{{img}}" class="imagen">
+
+<!-- PRUEBA -->
+
+<!-- <div class="card">
+    <div class="card-body">
+        <h5 class="card-title">
+            <p>Name: {{name}}</p>
+        </h5>
+        <h5 class="card-title">
+            <p>Age: {{age}}</p>
+        </h5>
+        <p class="card-text">Descripcion</p>
+        <a href="#" class="card-link">Github</a>
+        <a href="#" class="card-link">Twitter</a>
+    </div>
+</div> -->
